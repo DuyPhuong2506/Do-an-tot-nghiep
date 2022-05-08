@@ -1,0 +1,78 @@
+.about__me{
+    width: 500px;
+    margin: auto;
+    .header__about{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .avatar__me{
+            position: relative  ;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            .button{
+                position: absolute;
+                top: -10px;
+                right: -17px;
+            }
+            img{
+                width: 100%;
+                border-radius: inherit;
+            }
+        }
+        .user_name{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .name{
+                font-size: 24px;
+                margin: 0;
+            }
+            samp{
+                text-align: center;
+            }
+        }
+    }
+
+    .body__about{
+        .contact__list_wrapper{
+            position: relative;
+            display: flex;
+            .contact__list_button{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        .show-avatar{
+            width: 100px;
+            height: 100px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .contact__list{
+            .left__list{
+                ul{
+                    list-style: none;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style-type: none;
+                        padding: 10px;
+                    }
+                }
+                .item_content{
+                    .key_name{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+}

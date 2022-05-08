@@ -1,0 +1,39 @@
+.button__admin{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    button{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        animation: runSlow 4s infinite;
+        &:hover{
+            animation: none;
+        }
+    }
+}
+
+.flash-time{
+    // margin-left: 20px;
+    margin-bottom: 20px;
+    .h , .i , .s{
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px 20px;
+    }
+
+}
+
+@keyframes runSlow {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}

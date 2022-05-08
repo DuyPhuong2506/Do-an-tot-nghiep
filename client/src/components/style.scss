@@ -1,0 +1,33 @@
+
+.loading{
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loading div{
+    /* border: 1px solid snow; */
+    border-top: 1px solid red;
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    border-radius: 50%;
+    animation:  rotate 10s infinite alternate-reverse;
+}
+@keyframes rotate {
+    0%{
+        transform: rotateY(0deg) ;
+    }
+    
+    100%{
+        transform: rotateZ(360deg)
+    }
+            0%,20%,40%,60%,80%,100% {
+        box-shadow: -1px -1px 2px #61dafb;
+    }
+    10%,30%,50%,70%,90% {
+        box-shadow: -1px -1px 1px #e214ae ,
+                    -1px -2px 1px #2814e2;
+    }
+}

@@ -1,0 +1,175 @@
+$white : #fff;
+$purple-light : #7e2b83;
+$purple-dark :#350039;
+$red-light : #f93939;
+$red-dark : #e94f5f;
+$border : #e6e2ec;
+$black-text : #373737;
+$gray: #8898aa;
+
+.dropdown {
+    height: 80% !important;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 0 !important;
+}
+
+.header-top-store{
+    background: $purple-light;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    .header-list{
+        .header-list-right{
+            .list-right-cl {
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .header-list-item{
+            padding: 5px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .list-title{
+                color: $white;
+                margin-left: 3px;
+            }
+            .hotline a{
+                color: $white;
+            }
+            &.line{
+                width: 1px;
+                height: 5px;
+                background: $white;
+                transform: translateY(20px);
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+
+header.header {
+    background: $white;
+    transition: .4s ease-in-out;
+    @media screen and (max-width: 1199px) {
+      display: none;
+  }
+    .header-wrapper {
+      height: 68px;
+      .header-logo {
+        flex: 0 0 190px;
+        max-width: 190px;
+        img {
+          width: 100%;
+        }
+      }
+      .header-search {
+        flex: 1;
+        max-width: 600px;
+        border-radius: 4px;
+        margin: 0 15px;
+        .search-filter {
+            position: relative;
+            .button-search{
+                position: absolute;
+                top: -4px;
+                right: -7px;
+                cursor: pointer;
+            }
+          .button-component {
+            width: 100%;
+            border: 1px solid $border;
+            border-radius: 4px 0 0 4px;
+            height: 100%;
+            padding:  0 60px 0 10px ;
+            background: transparent;
+            border-top-right-radius: 20px ;
+            border-bottom-right-radius: 20px;
+            .button-title {
+              padding-right: 10px;
+              font-family: Lexend;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                color: $black-text;
+            }
+          }
+        }
+        .search-input {
+          flex: 1;
+          input {
+            width: 100%;
+            height: 42px;
+            outline: none;
+            border: none;
+            padding: 0 10px;
+            font-size: 12px;
+            border: 1px solid $border;
+            border-right: none;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            &::placeholder {
+              color: $gray;
+            }
+          }
+        }
+        .search-btn {
+          .button-component {
+            width: 32px;
+            border-radius: 0px 4px 4px 0px;
+          }
+        }
+      }
+      .header-btn-groups {
+        .button-component {
+          margin-left: 15px;
+        }
+        .btn-infomation{
+            cursor: pointer;
+            position: relative;
+            .info-icon{
+                text-align: center;
+                .notify-title{
+                    font-family: Lexend;
+                    font-size: 14px;
+                    text-align: left;
+                    color: #000;
+                }
+            }
+            .info-count{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 10px;
+                span{
+                    padding: 5px;
+                    background: $red-light;
+                    color: $white;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: -5px;
+                    right: 9px;
+                }
+            }
+        }
+      }
+    }
+  }
+  .show__header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    padding: 1rem 0 0 0;
+    z-index: 100;
+  }
